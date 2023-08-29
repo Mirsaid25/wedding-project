@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ledger";
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background-color:#082C2B ;
+  /* color: #062221; */
+}
+
+.tobottom_icon{
+    filter: invert(100%);
+    margin: 10px auto;
+    height: 40px;
+}
+
