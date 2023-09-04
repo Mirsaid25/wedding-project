@@ -10,8 +10,23 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <title>Vite App</title>
     </head>
-    <body class="relative">
-		<div class="absolute left-0 top-0 bg-no-repeat bg-cover -z-20 bg-[url('/smoke2.png')] h-screen w-full "></div>
+    <body class="relative max-w-[1000px] m-auto">
+
+		<div id="preload" class="fixed top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center  bg-[url('/smoke2.png')] z-40">
+            <div class="absolute left-0 top-0 bg-[#082c2bd5] w-full h-full flex items-center justify-center">
+				<img src="/himAndI.svg" class="w-1/2" alt="">
+			</div>
+		</div>
+
+		<div class="">
+			<img src="/musicController.svg" id="music_controler" class="fixed top-5 right-5 w-[10%] cursor-pointer" alt="">
+		</div>
+
+        <audio id="player" autoplay class="playing" >
+            <source src="/music2.mp3" type="">
+        </audio>
+
+		<div class="absolute left-0 top-16 sm:top-32 md:top-40 bg-no-repeat bg-cover -z-20 bg-[url('/smoke2.png')] h-screen w-full "></div>
 		<div class="absolute -z-10 left-0 top-0 bg-[#082c2bd5] w-full h-full"></div>
 
 		<div class="container fixed top-0 left-0 -z-10">
@@ -318,10 +333,10 @@
 		</div>
 
 		<section class="mb-10 sm:mb-20 md:mb-28">
-			<div class="w-full h-[60vh] bg-center bg-cover bg-[url('/foto1.jpg')] relative flex flex-col items-center justify-end pb-[30%]">
+			<div class="w-full h-[80vh] bg-center bg-cover bg-[url('/foto1.jpg')] relative flex flex-col items-center justify-end pb-[30%]">
 		    	<div class="flex flex-col gap-5">
-		    		<h3 class="text-white text-2xl text-center">26 | 08 | 2023</h3>
-                    <h1 class="text-[rgb(248,215,86)] text-3xl font-bold">Kodirali + Shoftoli</h1>
+		    		<h3 class="text-white text-2xl sm:text-3xl md:text-4xl text-center">16 | 09 | 2023</h3>
+                    <h1 class="text-[rgb(248,215,86)] text-3xl sm:text-4xl md:text-5xl font-bold">Эльбек + Фарангиз</h1>
 		    	</div>
                 <div class="absolute bottom-0 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#082C2B] ">
 		    	</div>
@@ -335,21 +350,24 @@
 
 		<section class="mt-20 mb-16 sm:mb-24">
 			<div class="relative flex bg-no-repeat bg-[url(/ramka1.svg)] bg-cover bg-center flex-col items-center justify-center w-full overflow-hidden h-[100vh] px-10 pt-10 gap-5">
-			    <h1 class="text-[rgb(248,215,86)] text-3xl sm:text-4xl md:text-6xl text-center mb-6">Ура У Нас Свадьба!</h1>
+			    <h1 class="text-[rgb(248,215,86)] text-3xl sm:text-4xl md:text-5xl text-center mb-6">Ура У Нас Свадьба!</h1>
 				<div class="w-full flex justify-center">
 					<div class="max-w-[400px] sm:max-w-[500px] px-5 mt-5">
-					  <p class="text-lg sm:text-3xl md:text-4xl tracking-widest leading-8 text-white text-center mb-2 sm:mb-5 md:mb-10">
-						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-					  </p>
+					   <p class="text-lg sm:text-3xl tracking-widest leading-8 text-white text-center mb-2 sm:mb-5 md:mb-10">
+					 	    В НАШЕЙ ЖИЗНИ ВОТ-ВОТ СЛУЧИТСЯ СЧАСЛИВОЕ И РАДОСТНОЕ СОБЫТИЕ. КОТОРОЕ ХОЧЕМ РАЗДЕЛИТЬ С ДОРОГИМИ ЛЮДЬМИ
+					   </p>
+					   <p class="text-lg sm:text-3xl tracking-widest leading-8 text-white text-center mb-2 sm:mb-5 md:mb-10">
+					        МЫ ПРИГЛАШАЕМ ВАС ОТКРЫТЬ ВМЕСТЕ С НАМИ НОВУЮ СТРАНИЦУ КНИГИ НАШЕЙ ЖИЗНИ! 
+				        </p>
 					</div>
 				</div>
 				<div class="flex items-center gap-7 sm:mb-2 md:mb-4">
-                    <p class="text-white leading-9 tracking-widest sm:text-2xl md:text-3xl">АВГУСТ</p>
-					<h2 class="text-[rgb(248,215,86)] text-6xl text-center sm:text-7xl md:text-9xl">06</h2>
+                    <p class="text-white leading-9 tracking-widest sm:text-2xl md:text-3xl">СЕНТЯБРЬ</p>
+					<h2 class="text-[rgb(248,215,86)] text-6xl text-center sm:text-7xl md:text-8xl">16</h2>
                     <p class="text-white leading-9 tracking-widest text-2xl sm:text-4xl">2023</p>
 				</div>
-				<p class="text-white text-center leading-9 tracking-widest sm:text-2xl md:text-3xl sm:mb-2 md:mb-4">СБОР ГОСТЕЙ В 16:00</p>
-				<p class="text-white text-center leading-9 tracking-widest sm:text-2xl md:text-3xl">НАЧАЛО В 16:00</p>
+				<p class="text-white text-center leading-9 tracking-widest sm:text-2xl md:text-3xl sm:mb-2 md:mb-4">СБОР ГОСТЕЙ В 17:00</p>
+				<p class="text-white text-center leading-9 tracking-widest sm:text-2xl md:text-3xl">НАЧАЛО В 18:00</p>
 		    </div>
 		</section>
 		<div class="w-40 sm:w-60 m-auto">
@@ -383,7 +401,7 @@
                 <div class="absolute bottom-0 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#082C2B] -z-[0]">
 		        </div>
 			</div>
-			<h2 class="text-center text-white text-3xl sm:text-4xl md:text-5xl">АВГУСТ</h2>
+			<h2 class="text-center text-white text-3xl sm:text-4xl md:text-5xl">СЕНТЯБРЬ</h2>
 			  
 			<table class="text-white w-[90%] absolute left-1/2 -bottom-[30%] sm:-bottom-[40%] z-10 md:-bottom-[50%] -translate-x-2/4">
 				<thead>
@@ -400,66 +418,57 @@
 				  
 				<tbody>
 					<tr>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
+						<td class="text-gray-600 pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">28</td>
+						<td class="text-gray-600 pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">29</td>
+						<td class="text-gray-600 pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">30</td>
+						<td class="text-gray-600 pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">31</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">1</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">2</td>
+						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">3</td>
 					</tr>
 					<tr></tr>
 					<tr>
-						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">3</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">4</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">5</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">6</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">7</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">8</td>
-						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">
-							<div class="relative">
-								<div data-aos="zoom-in" data-aos-duration="500">
-									<svg class="w-[150%] text-[#ffbe33] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M220.18,59.79a54.05,54.05,0,0,0-76.31,0L128,74.51,112.13,59.74A54,54,0,0,0,35.8,136.15l89.35,90.66a4,4,0,0,0,5.7,0l89.33-90.64a54,54,0,0,0,0-76.38Zm-5.67,70.74L128,218.3,41.47,130.51a46,46,0,0,1,65.06-65.06l.1.1,18.64,17.36a4,4,0,0,0,5.46,0l18.64-17.36.1-.1a46,46,0,1,1,65,65.08Z"></path></svg>
-								</div>
-								<p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">9</p>
-							</div>
-						</td>
-					</tr>
+						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">9</td>
+						<td class="pb-4 sm:pb:8 md:pb-16 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">10</td>
+				    </tr>
 					<tr>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">10</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">11</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">12</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">13</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">14</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">15</td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">16</td>
+						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">
+                            <div class="relative">
+								<div data-aos="zoom-in" data-aos-duration="500">
+									<svg class="w-[150%] text-[#ffbe33] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M220.18,59.79a54.05,54.05,0,0,0-76.31,0L128,74.51,112.13,59.74A54,54,0,0,0,35.8,136.15l89.35,90.66a4,4,0,0,0,5.7,0l89.33-90.64a54,54,0,0,0,0-76.38Zm-5.67,70.74L128,218.3,41.47,130.51a46,46,0,0,1,65.06-65.06l.1.1,18.64,17.36a4,4,0,0,0,5.46,0l18.64-17.36.1-.1a46,46,0,1,1,65,65.08Z"></path></svg>
+								</div>
+								<p class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">16</p>
+							</div>
+						</td>
+						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">17</td>
 					</tr>
 					<tr>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">17</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">18</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">19</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">20</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">21</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">22</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">23</td>
+						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">24</td>
 					</tr>
 					<tr>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">24</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">25</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">26</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">27</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">28</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">29</td>
 						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">30</td>
-					</tr>
-					<tr>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">31</td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
-						<td class="pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl"></td>
+						<td class="text-gray-600 pb-4 sm:pb:8 md:pb-16 text-center sm:text-xl md:text-3xl">1</td>
 					</tr>
 				</tbody>
 			</table>
@@ -650,4 +659,3 @@
 		AOS.init();
 	</script>
 </html>
-

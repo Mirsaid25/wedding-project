@@ -25,3 +25,11 @@ body {
 .text_yellov{
   color:linear-gradient(20deg, rgba(248,215,86,1), rgba(156,109,39,1));
 }
+
+#preload{
+  transition:2000ms;
+}
+
+#music_controler{
+  z-index: 37;
+}
