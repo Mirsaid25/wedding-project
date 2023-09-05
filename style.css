@@ -33,3 +33,7 @@ body {
 #music_controler{
   z-index: 37;
 }
+
+.contener {
+  display: none;
+}
