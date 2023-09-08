@@ -2,13 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="./css/animation.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>Vite App</title>
+        <title>Invitation</title>
     </head>
     <body class="relative max-w-[1000px] m-auto">
 
@@ -18,17 +17,20 @@
 			</div>
 		</div>
 		
-		<div class="">
-            <div class="">
+		<div>
+            <div>
 				<img src="/musicController.svg" id="music_controler" class="fixed top-5 right-5 w-[10%] cursor-pointer" alt="">
 			</div>
 			
 			<audio id="player" autoplay class="playing" >
-				<source src="/music2.mp3" type="">
+				<source src="/music.mp3" type="">
 			</audio>
 	
-			<div class="absolute left-0 top-16 sm:top-32 md:top-40 bg-no-repeat bg-cover -z-20 bg-[url('/smoke2.png')] h-screen w-full "></div>
-			<div class="absolute -z-10 left-0 top-0 bg-[#082c2bd5] w-full h-full"></div>
+			<div class="absolute left-0 top-32 sm:top-32 md:top-40 bg-no-repeat bg-cover -z-20 bg-[url('/smoke2.png')] h-screen w-full ">
+				<div class="absolute -bottom-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#062f2e] ">
+				</div>
+			</div>
+			<div class="absolute -z-10 left-0 top-0 bg-[#082c2be8] w-full h-full"></div>
 	
 			<div class="container fixed top-0 left-0 -z-10">
 				<div class="circle-container">
@@ -334,12 +336,12 @@
 			</div>
 	
 			<section class="mb-10 sm:mb-20 md:mb-28">
-				<div class="w-full h-[80vh] bg-center bg-cover bg-[url('/foto1.jpg')] relative flex flex-col items-center justify-end pb-[30%]">
+				<div class="w-full h-[80vh] bg-center bg-cover bg-[url('/img/foto1.jpg')] relative flex flex-col items-center justify-end pb-[30%]">
 					<div class="flex flex-col gap-5">
 						<h3 class="text-white text-2xl sm:text-3xl md:text-4xl text-center">16 | 09 | 2023</h3>
 						<h1 class="text-[rgb(248,215,86)] text-3xl sm:text-4xl md:text-5xl font-bold">Эльбек + Фарангиз</h1>
 					</div>
-					<div class="absolute bottom-0 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#082C2B] ">
+					<div class="absolute -bottom-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#062f2e] ">
 					</div>
 				</div>
 			</section>
@@ -371,16 +373,15 @@
 					<p data-aos="fade-up" data-aos-duration="1000" class="text-white text-center leading-9 tracking-widest sm:text-2xl md:text-3xl">НАЧАЛО В 18:00</p>
 				</div>
 			</section>
+
 			<div class="w-40 sm:w-60 m-auto">
 				<img src="/himAndI.svg"  alt="">
 			</div>
 	
-			<section class="mt-16 sm:mt-24 flex flex-col justify-beetvin pb-20 relative">
-				<div class="mb-10 sm:mb-16 md:mb-32 w-full h-[100vh] bg-center bg-cover bg-[url('/foto1.jpg')] relative pt-[20%]">
+			<section class="mt-16 sm:mt-24 flex flex-col justify-beetvin relative">
+				<div class="mb-10 sm:mb-16 md:mb-32 w-full h-[100vh] bg-center bg-cover bg-[url('/img/foto2.jpg')] relative pt-[20%]">
 					<div class="absolute -top-1 left-0 w-full h-[20%] bg-gradient-to-b from-[#082C2B] to-[#082c2b00] "></div>
-	
-					<img src="" alt="">
-					
+						
 					<div class="border-2 border-[#ffbe33] text-[#ffbe33] rounded-full flex items-center justify-between p-6 sm:px-32 absolute bottom-0 left-0 z-[5] w-full">
 						<div data-aos="fade-up" data-aos-duration="1000" class="flex flex-col items-center justify-center gap-2">
 							<h2 id="day" class="text-3xl sm:text-4xl md:text-5xl">00</h2>
@@ -404,7 +405,7 @@
 				</div>
 				<h2 class="text-center text-white text-3xl sm:text-4xl md:text-5xl">СЕНТЯБРЬ</h2>
 				  
-				<table class="text-white w-[90%] absolute left-1/2 -bottom-[30%] sm:-bottom-[40%] z-10 md:-bottom-[50%] -translate-x-2/4">
+				<table class="text-white w-[90%] absolute left-1/2 max-sm:-bottom-[32%] z-10 md:-bottom-[55%] -translate-x-2/4">
 					<thead>
 						<tr>
 							<td class="pb-4 sm:pb:8 md:pb-16 text-xs sm:text-xl md:text-3xl text-center">ПН</td>
@@ -476,10 +477,10 @@
 	
 			</section>
 	
-			<section class="mt-32">
-				<div class="w-full h-[90vh] bg-center bg-cover bg-[url('/foto1.jpg')] relative flex flex-col items-center justify-end pb-[30%]">\
-					<div class="absolute -top-[1px] left-0 w-full h-[25%] bg-gradient-to-b from-[#082C2B] to-[#082c2b00] "></div>
-					<div class="absolute bottom-0 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#082C2B] "></div>
+			<section class="mt-24 sm:mt-60 md:mt-[300px]">
+				<div class="w-full h-[90vh] bg-center bg-cover bg-[url('/img/foto3.jpg')] relative flex flex-col items-center justify-end pb-[30%]">\
+					<div class="absolute -top-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082C2B] to-[#082c2b00] "></div>
+					<div class="absolute -bottom-1 left-0 w-full h-[25%] bg-gradient-to-b from-[#082c2b00] to-[#082C2B] "></div>
 				</div>
 				<div class="text-center uppercase">
 				  <div data-aos="fade-up" data-aos-duration="1000" class=" px-5">
@@ -513,10 +514,10 @@
 			<section>
 				<div class="mt-10">
 				  <div class="relative w-full">
-					<div class="w-full h-[20%] z-10 absolute top-0 left-0 bg-gradient-to-t from-[#082c2b00] to-[#082C2B]">
+					<div class="w-full h-[20%] z-10 absolute -top-1 left-0 bg-gradient-to-t from-[#082c2b00] to-[#082C2B]">
 					</div>
-					<img class="w-full" src="/foto1.jpg" alt="">
-					<div class="w-full h-[40%] z-10 absolute bottom-0 left-0 bg-gradient-to-b from-[#082c2b00] to-[#082C2B]">
+					<img class="w-full" src="/img/foto4.jpg" alt="">
+					<div class="w-full h-[40%] z-10 absolute -bottom-1 left-0 bg-gradient-to-b from-[#082c2b00] to-[#082C2B]">
 					</div>
 				  </div>
 				  <div class="mt-5">
@@ -540,14 +541,14 @@
 			
 			<section class="overflow-hidden">
 				<div class="mt-8">
-				  <div class="sm:hidden relative sm:h-[80vh] h-[50vh] bg-center bg-cover bg-[url('/foto1.jpg')]">
-					<div class="w-full h-[20%] z-10 absolute top-0 left-0 bg-gradient-to-t from-[#082c2b00] to-[#082C2B]">
+				  <div class="sm:hidden relative sm:h-[80vh] h-[50vh] bg-center bg-cover bg-[url('/img/foto5.jpg')]">
+					<div class="w-full h-[20%] z-10 absolute -top-1 left-0 bg-gradient-to-t from-[#082c2b00] to-[#082C2B]">
 					</div>
 			
-					<div class="w-full h-[20%] z-10 absolute bottom-0 left-0 bg-gradient-to-b from-[#082c2b00] to-[#082C2B]">
+					<div class="w-full h-[20%] z-10 absolute -bottom-1 left-0 bg-gradient-to-b from-[#082c2b00] to-[#082C2B]">
 					</div>
 				  </div>
-				  <div class="flex flex-col items-center justify-center sm:h-[80vh] relative bg-center bg-cover sm:bg-[url('/foto1.jpg')]">
+				  <div class="flex flex-col items-center justify-center sm:h-[80vh] relative bg-center bg-cover sm:bg-[url('/img/foto5.jpg')]">
 					<div
 					  class="max-sm:hidden w-full h-[25%] z-10 absolute top-0 left-0 bg-gradient-to-t from-[#082c2b00] to-[#082C2B]">
 					</div>
@@ -616,7 +617,7 @@
 				  </div>
 			</section>
 	
-			<footer class="bg-white mt-40">
+			<footer class="bg-white mt-20">
 				<div class="container m-auto px-5 py-5 text-gray-500">
 				  <div class="flex flex-col items-center">
 					<div class="w-28 rounded-full overflow-hidden">
