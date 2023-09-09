@@ -3,7 +3,7 @@ let hour = document.querySelector("#hour");
 let minut = document.querySelector("#minut");
 let second = document.querySelector("#second");
 
-let deadline = "2023-09-16 ,18:30";
+let deadline = "2023-09-16,18:30";
 
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
