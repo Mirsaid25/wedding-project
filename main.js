@@ -51,8 +51,11 @@ window.onload = function (e) {
     setTimeout(() => {
       preload.style.opacity = 0;
 	    window.scrollTo(0,0)
-    }, 1000).then(()=> preload.style.display = "none")
+    }, 1000)
 }
 
+setTimeout(() => {
+  preload.style.display = "none";
+}, 4000)
 
 
