@@ -47,16 +47,11 @@ controler.onclick = () => {
 let preload = document.querySelector("#preload");
 let contener = document.querySelector(".contener")
 
-window.onload = function () {
-    
+window.onload = function (e) {
     setTimeout(() => {
       preload.style.opacity = 0;
 	    window.scrollTo(0,0)
-    }, 1000)
-
-    setTimeout(() => {
-      preload.style.display = "none";
-    }, 2000)
+    }, 1000).then(()=> preload.style.display = "none")
 }
 
 
